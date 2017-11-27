@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arabica\Calificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arabica\Calificar.Designer.cs">
+      <DependentUpon>Calificar.cs</DependentUpon>
+    </Compile>
     <Compile Include="IformPerson.cs" />
     <Compile Include="IformSesion.cs" />
     <Compile Include="Menu.cs">
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="MuestraForm.Designer.cs">
       <DependentUpon>MuestraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muestra\EditMuestra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muestra\EditMuestra.Designer.cs">
+      <DependentUpon>EditMuestra.cs</DependentUpon>
     </Compile>
     <Compile Include="NewPerson.cs">
       <SubType>Form</SubType>
@@ -99,11 +111,17 @@
     <Compile Include="SesionCatadoForm.Designer.cs">
       <DependentUpon>SesionCatadoForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Arabica\Calificar.resx">
+      <DependentUpon>Calificar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MuestraForm.resx">
       <DependentUpon>MuestraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muestra\EditMuestra.resx">
+      <DependentUpon>EditMuestra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewPerson.resx">
       <DependentUpon>NewPerson.cs</DependentUpon>
@@ -154,6 +172,294 @@
       <Project>{33ce1928-920a-403b-a409-b855ae44298e}</Project>
       <Name>Infraestructure.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Administrador 16x16.png" />
+    <Content Include="Resources\Administrador 32x32.png" />
+    <Content Include="Resources\ahumado.png" />
+    <Content Include="Resources\albaricoque.png" />
+    <Content Include="Resources\almendra.png" />
+    <Content Include="Resources\anis.png" />
+    <Content Include="Resources\apagado.png" />
+    <Content Include="Resources\apagado1.png" />
+    <Content Include="Resources\Apellido.png" />
+    <Content Include="Resources\arveja.png" />
+    <Content Include="Resources\arándano.png" />
+    <Content Include="Resources\astringente.png" />
+    <Content Include="Resources\Atencion.png" />
+    <Content Include="Resources\avellano.png" />
+    <Content Include="Resources\Ayuda 16x16.png" />
+    <Content Include="Resources\azahar.png" />
+    <Content Include="Resources\azucar de caña.png" />
+    <Content Include="Resources\azucar morena.png" />
+    <Content Include="Resources\azucar quemada.png" />
+    <Content Include="Resources\balanceado.png" />
+    <Content Include="Resources\bergamota.png" />
+    <Content Include="Resources\blando.png" />
+    <Content Include="Resources\brillante.png" />
+    <Content Include="Resources\Buscar 26x26.png" />
+    <Content Include="Resources\caballo.png" />
+    <Content Include="Resources\cacahuate.png" />
+    <Content Include="Resources\calabacin.png" />
+    <Content Include="Resources\Cancelar 22x22.bmp" />
+    <Content Include="Resources\Cancelar 22x22.png" />
+    <Content Include="Resources\Cancelar 32x32.png" />
+    <Content Include="Resources\canela.png" />
+    <Content Include="Resources\carambola.png" />
+    <Content Include="Resources\caramelo.png" />
+    <Content Include="Resources\carbon.png" />
+    <Content Include="Resources\carne.png" />
+    <Content Include="Resources\Catadores registrados 48x48.png" />
+    <Content Include="Resources\Catar 32x32.png" />
+    <Content Include="Resources\Catar 48x48.png" />
+    <Content Include="Resources\caucho.png" />
+    <Content Include="Resources\cebada.png" />
+    <Content Include="Resources\cedro.png" />
+    <Content Include="Resources\Cedula.png" />
+    <Content Include="Resources\centeno.png" />
+    <Content Include="Resources\cereza negra.png" />
+    <Content Include="Resources\cereza.png" />
+    <Content Include="Resources\Cerrar sesion.png" />
+    <Content Include="Resources\chocolate amargo.png" />
+    <Content Include="Resources\chocolate de leche.png" />
+    <Content Include="Resources\chocolate de reposteria.png" />
+    <Content Include="Resources\chocolate oscuro.png" />
+    <Content Include="Resources\chocolate.png" />
+    <Content Include="Resources\cilantro.png" />
+    <Content Include="Resources\ciruela pasa.png" />
+    <Content Include="Resources\ciruela.png" />
+    <Content Include="Resources\citrico.png" />
+    <Content Include="Resources\Ciudad 24x24.png" />
+    <Content Include="Resources\Ciudad 26x26.png" />
+    <Content Include="Resources\Ciudad 32x32.png" />
+    <Content Include="Resources\Ciudad 48x48.png" />
+    <Content Include="Resources\clavo.png" />
+    <Content Include="Resources\clementina.png" />
+    <Content Include="Resources\coco.png" />
+    <Content Include="Resources\cocoa en polvo.png" />
+    <Content Include="Resources\cola.png" />
+    <Content Include="Resources\Confirmar contraseña.png" />
+    <Content Include="Resources\Consultas y estadisticas 128x128.png" />
+    <Content Include="Resources\Consultas y estadisticas 68x68.png" />
+    <Content Include="Resources\Contraseña 16x16.png" />
+    <Content Include="Resources\Contraseña 26x26.png" />
+    <Content Include="Resources\Contraseña 32x32.png" />
+    <Content Include="Resources\Contraseña 48x48.png" />
+    <Content Include="Resources\Correo 26x26.png" />
+    <Content Include="Resources\crema.png" />
+    <Content Include="Resources\cremoso.png" />
+    <Content Include="Resources\crujiente.png" />
+    <Content Include="Resources\cuero.png" />
+    <Content Include="Resources\curry.png" />
+    <Content Include="Resources\delicado.png" />
+    <Content Include="Resources\dense.png" />
+    <Content Include="Resources\dense1.png" />
+    <Content Include="Resources\desbalanceado.png" />
+    <Content Include="Resources\Descriptores 48x48.png" />
+    <Content Include="Resources\Descriptores.png" />
+    <Content Include="Resources\deslucido.png" />
+    <Content Include="Resources\Direccion 26x26.png" />
+    <Content Include="Resources\dulce.png" />
+    <Content Include="Resources\durazno.png" />
+    <Content Include="Resources\dátiles.png" />
+    <Content Include="Resources\débil.png" />
+    <Content Include="Resources\Eliminar 32x32.png" />
+    <Content Include="Resources\eneldo.png" />
+    <Content Include="Resources\especias.png" />
+    <Content Include="Resources\estadisticapng.png" />
+    <Content Include="Resources\estructuado.png" />
+    <Content Include="Resources\example 300x288.png" />
+    <Content Include="Resources\example2 300x288.png" />
+    <Content Include="Resources\fermentado.png" />
+    <Content Include="Resources\Filtrar 26x26.png" />
+    <Content Include="Resources\Finca 26x26.png" />
+    <Content Include="Resources\floral.png" />
+    <Content Include="Resources\Fondo - Inicio de Sesión.png" />
+    <Content Include="Resources\Fondo - Menú principal.png" />
+    <Content Include="Resources\frambuesa.png" />
+    <Content Include="Resources\fresa.png" />
+    <Content Include="Resources\frutal.png" />
+    <Content Include="Resources\frutas de hueso.png" />
+    <Content Include="Resources\frutas secas.png" />
+    <Content Include="Resources\frutas tropicales.png" />
+    <Content Include="Resources\galleta salada.png" />
+    <Content Include="Resources\gengibre.png" />
+    <Content Include="Resources\Gestionar catadores 128x128.png" />
+    <Content Include="Resources\Gestionar catadores 68x68.png" />
+    <Content Include="Resources\Gestionar catadores 68x681.png" />
+    <Content Include="Resources\Grano Verde 32x32.png" />
+    <Content Include="Resources\granola.png" />
+    <Content Include="Resources\granos de cacao.png" />
+    <Content Include="Resources\granos-cereal.png" />
+    <Content Include="Resources\grosella negra.png" />
+    <Content Include="Resources\grosella roja.png" />
+    <Content Include="Resources\Guardar 32x32.png" />
+    <Content Include="Resources\guisante.png" />
+    <Content Include="Resources\Hacer gestión 48x48.png" />
+    <Content Include="Resources\heno-paja.png" />
+    <Content Include="Resources\herbal.png" />
+    <Content Include="Resources\herbal1.png" />
+    <Content Include="Resources\herboso.png" />
+    <Content Include="Resources\herboso1.png" />
+    <Content Include="Resources\hibiscus.png" />
+    <Content Include="Resources\hijo seco.png" />
+    <Content Include="Resources\hojas verdes.png" />
+    <Content Include="Resources\hongos.png" />
+    <Content Include="Resources\horneado.png" />
+    <Content Include="Resources\inconsistente.png" />
+    <Content Include="Resources\Ingresar 22x22.png" />
+    <Content Include="Resources\Ingresar 32x32.png" />
+    <Content Include="Resources\Ingresar 32x321.png" />
+    <Content Include="Resources\Iniciar sesion 32x32.png" />
+    <Content Include="Resources\Izquierda 25x25.png" />
+    <Content Include="Resources\jazmín.png" />
+    <Content Include="Resources\jugoso.png" />
+    <Content Include="Resources\kiwi.png" />
+    <Content Include="Resources\laboratorio invert.png" />
+    <Content Include="Resources\laboratorio.png" />
+    <Content Include="Resources\laboratorio1.png" />
+    <Content Include="Resources\lavanda.png" />
+    <Content Include="Resources\leve.png" />
+    <Content Include="Resources\ligero.png" />
+    <Content Include="Resources\ligero1.png" />
+    <Content Include="Resources\lima.png" />
+    <Content Include="Resources\limoncillo.png" />
+    <Content Include="Resources\limpio.png" />
+    <Content Include="Resources\limón.png" />
+    <Content Include="Resources\lista.png" />
+    <Content Include="Resources\loader.gif" />
+    <Content Include="Resources\logo-retina.jpg" />
+    <Content Include="Resources\logoexcel.png" />
+    <Content Include="Resources\Logotipo 88x57.png" />
+    <Content Include="Resources\Logotipo 98x63 copia.png" />
+    <Content Include="Resources\Logotipo 98x63.png" />
+    <Content Include="Resources\lupulo.png" />
+    <Content Include="Resources\lychee.png" />
+    <Content Include="Resources\madera fresca.png" />
+    <Content Include="Resources\maderozo.png" />
+    <Content Include="Resources\magnolia.png" />
+    <Content Include="Resources\malta.png" />
+    <Content Include="Resources\malvavisco.png" />
+    <Content Include="Resources\mandarina.png" />
+    <Content Include="Resources\mango.png" />
+    <Content Include="Resources\manos.png" />
+    <Content Include="Resources\manos1.png" />
+    <Content Include="Resources\mantequilla.png" />
+    <Content Include="Resources\manzana roja.png" />
+    <Content Include="Resources\manzana verde.png" />
+    <Content Include="Resources\manzana-pera.png" />
+    <Content Include="Resources\maracuyá.png" />
+    <Content Include="Resources\medio.png" />
+    <Content Include="Resources\melasa.png" />
+    <Content Include="Resources\melon.png" />
+    <Content Include="Resources\melón.png" />
+    <Content Include="Resources\menta.png" />
+    <Content Include="Resources\miel de maple.png" />
+    <Content Include="Resources\miel.png" />
+    <Content Include="Resources\mielada.png" />
+    <Content Include="Resources\Modificar 32x32.png" />
+    <Content Include="Resources\mohoso.png" />
+    <Content Include="Resources\mora azul.png" />
+    <Content Include="Resources\moras.png" />
+    <Content Include="Resources\Muestra 32x32.png" />
+    <Content Include="Resources\Muestra 48x48.png" />
+    <Content Include="Resources\naranja.png" />
+    <Content Include="Resources\nectarina.png" />
+    <Content Include="Resources\Nivel de tueste 1.png" />
+    <Content Include="Resources\Nivel de tueste 2.png" />
+    <Content Include="Resources\Nivel de tueste 3.png" />
+    <Content Include="Resources\Nivel de tueste 4.png" />
+    <Content Include="Resources\Nivel de tueste 5.png" />
+    <Content Include="Resources\No 26x26.png" />
+    <Content Include="Resources\Nombre.png" />
+    <Content Include="Resources\Nueva sesión de catación 32x32.png" />
+    <Content Include="Resources\Nueva sesión de catación 48x48.png" />
+    <Content Include="Resources\Nueva sesión de catación2 48x48.png" />
+    <Content Include="Resources\Nuevo catador 32x32.png" />
+    <Content Include="Resources\nuez de marañon.png" />
+    <Content Include="Resources\nuez de nogal.png" />
+    <Content Include="Resources\nuez moscada.png" />
+    <Content Include="Resources\nuez.png" />
+    <Content Include="Resources\olivia.png" />
+    <Content Include="Resources\pan dulce.png" />
+    <Content Include="Resources\pan fresco.png" />
+    <Content Include="Resources\pan tostado.png" />
+    <Content Include="Resources\papaya.png" />
+    <Content Include="Resources\pasas amarillas.png" />
+    <Content Include="Resources\pecano.png" />
+    <Content Include="Resources\Perfil.png" />
+    <Content Include="Resources\piel.png" />
+    <Content Include="Resources\pimienta negra.png" />
+    <Content Include="Resources\pimienta verde - vegetal.png" />
+    <Content Include="Resources\pimienta verde.png" />
+    <Content Include="Resources\piña.png" />
+    <Content Include="Resources\platano.png" />
+    <Content Include="Resources\Printer 32x32.png" />
+    <Content Include="Resources\Productor 2 48x48.png" />
+    <Content Include="Resources\Productor.png" />
+    <Content Include="Resources\prolongado.png" />
+    <Content Include="Resources\Proveedor 2.jpg" />
+    <Content Include="Resources\Proveedor 3.png" />
+    <Content Include="Resources\Proveedor.png" />
+    <Content Include="Resources\Proveedores2 48x48.png" />
+    <Content Include="Resources\quemado.png" />
+    <Content Include="Resources\rancio.png" />
+    <Content Include="Resources\Realizar cataciones 128x128.png" />
+    <Content Include="Resources\Realizar cataciones 32x32.png" />
+    <Content Include="Resources\Realizar cataciones 68x68.png" />
+    <Content Include="Resources\Recicla.png" />
+    <Content Include="Resources\redondeado.png" />
+    <Content Include="Resources\rio.png" />
+    <Content Include="Resources\rosas.png" />
+    <Content Include="Resources\Rueda sabores 32x32.png" />
+    <Content Include="Resources\Rueda sabores 48x48.png" />
+    <Content Include="Resources\rápido.png" />
+    <Content Include="Resources\salado.png" />
+    <Content Include="Resources\salsa de soya.png" />
+    <Content Include="Resources\salvia.png" />
+    <Content Include="Resources\salvia1.png" />
+    <Content Include="Resources\seco.png" />
+    <Content Include="Resources\Sesiones de cataciones registradas 48x48.png" />
+    <Content Include="Resources\Si 26x26.png" />
+    <Content Include="Resources\silvestre.png" />
+    <Content Include="Resources\sucio.png" />
+    <Content Include="Resources\sudoroso.png" />
+    <Content Include="Resources\suelo.png" />
+    <Content Include="Resources\tabaco.png" />
+    <Content Include="Resources\tamarindo.png" />
+    <Content Include="Resources\tangerina.png" />
+    <Content Include="Resources\Taza no ok.png" />
+    <Content Include="Resources\Telefono.png" />
+    <Content Include="Resources\terroso.png" />
+    <Content Include="Resources\terroso1.png" />
+    <Content Include="Resources\tierra.png" />
+    <Content Include="Resources\tipped.png" />
+    <Content Include="Resources\tomate seco.png" />
+    <Content Include="Resources\tomate.png" />
+    <Content Include="Resources\toronja.png" />
+    <Content Include="Resources\tostado.png" />
+    <Content Include="Resources\trigo.png" />
+    <Content Include="Resources\Tutoriales 24x24.png" />
+    <Content Include="Resources\té negro.png" />
+    <Content Include="Resources\té verde.png" />
+    <Content Include="Resources\Uniformidad ok.png" />
+    <Content Include="Resources\Usuario 24x24.png" />
+    <Content Include="Resources\Usuario 24x241.png" />
+    <Content Include="Resources\Usuario 26x26.png" />
+    <Content Include="Resources\Usuario 32x32.png" />
+    <Content Include="Resources\Usuario 48x48.png" />
+    <Content Include="Resources\uva blanca.png" />
+    <Content Include="Resources\uva concord.png" />
+    <Content Include="Resources\uva roja.png" />
+    <Content Include="Resources\uva verde.png" />
+    <Content Include="Resources\uva.png" />
+    <Content Include="Resources\uvas pasas.png" />
+    <Content Include="Resources\vainilla.png" />
+    <Content Include="Resources\vegetal.png" />
+    <Content Include="Resources\Vereda 26 x26.png" />
+    <Content Include="Resources\vibrante.png" />
+    <Content Include="Resources\viejo.png" />
+    <Content Include="Resources\yute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

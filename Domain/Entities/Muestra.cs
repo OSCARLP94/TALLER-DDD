@@ -30,10 +30,10 @@ namespace Domain.Entities
                 return SesionCatado.Identificador == "Digitos"? Identificador.ToString() : Convert.ToChar(64 + Identificador).ToString();
             }
         }
+
         [Required]
         public string Estado { get; set; }
 
-        [Required]
         [ForeignKey("SesionCatado")]
         public string IdSesionCatado { get; set; }
 

@@ -15,13 +15,11 @@ namespace Application.Implements
         }
         public object Clone()
         {
-            //Muestra muestra = new Muestra();
+            Muestra muestra = new Muestra();
             //muestra.IdSesionCatado = this.IdSesionCatado;
-            //muestra.Estado = this.Estado;
-            //muestra.Especie = this.Especie;
-            //return muestra;
-
-            return this.MemberwiseClone() as Muestra ;
+            muestra.Estado = this.Estado;
+            muestra.Especie = this.Especie;
+            return muestra;
         }
     }
 }

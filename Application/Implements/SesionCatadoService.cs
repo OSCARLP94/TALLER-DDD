@@ -34,7 +34,7 @@ namespace Application.Implements
                 MuestraFactoryPrototype muestraPrototype = new MuestraFactoryPrototype();
                 muestraPrototype.Estado = "Incompleto";
                 muestraPrototype.Especie = entity.Protocolo;
-                //muestraPrototype.IdSesionCatado = entity.Id;
+                muestraPrototype.IdSesionCatado = entity.Id;
 
                 for (int i = 1; i <= entity.CantidadMuestras; i++)
                 {

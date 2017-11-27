@@ -10,7 +10,7 @@ namespace Domain.Entities
     {
         public SesionCatado()
         {
-            Muestras = new List<Muestra>();
+            Muestras = new HashSet<Muestra>();
         }
       
         [Required]
