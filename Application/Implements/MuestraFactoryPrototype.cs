@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Application.Implements
 {
-    public class MuestraFactoryPrototype : Muestra, ICloneable
+    public class MuestraFactoryPrototype : Muestra
     {
         public MuestraFactoryPrototype()
         {
 
         }
-        public object Clone()
+        public Muestra CreateMuestra()
         {
             Muestra muestra = new Muestra();
             //muestra.IdSesionCatado = this.IdSesionCatado;

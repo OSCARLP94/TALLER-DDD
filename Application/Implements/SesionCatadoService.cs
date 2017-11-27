@@ -38,7 +38,7 @@ namespace Application.Implements
 
                 for (int i = 1; i <= entity.CantidadMuestras; i++)
                 {
-                    Muestra muestraClone = muestraPrototype.Clone() as Muestra;
+                    Muestra muestraClone = muestraPrototype.CreateMuestra();
                     muestraClone.Id = Convert.ToString(rnd.Next(10000, 99999));
                     muestraClone.Identificador = i;
 

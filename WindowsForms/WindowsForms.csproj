@@ -429,6 +429,7 @@
     <Content Include="Resources\tamarindo.png" />
     <Content Include="Resources\tangerina.png" />
     <Content Include="Resources\Taza no ok.png" />
+    <None Include="Resources\taza.png" />
     <Content Include="Resources\Telefono.png" />
     <Content Include="Resources\terroso.png" />
     <Content Include="Resources\terroso1.png" />
