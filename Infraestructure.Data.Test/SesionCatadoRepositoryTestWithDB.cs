@@ -45,7 +45,7 @@ namespace Infraestructure.Data.Test
         {
             Console.WriteLine("Ejecutando NEW");
             //Arrange
-            SesionCatado c = new SesionCatado() {Id="3", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), IdCiudad = "311", Identificador = "Digitos", Protocolo = "Arabica", Muestras = 1, IdPerson = "201", Estado = "Incompleto" };
+            SesionCatado c = new SesionCatado() {Id="3", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), IdCiudad = "311", Identificador = "Digitos", Protocolo = "Arabica", CantidadMuestras = 1, IdPerson = "201", Estado = "Incompleto" };
 
             //Act
             objRepo.Add(c);
