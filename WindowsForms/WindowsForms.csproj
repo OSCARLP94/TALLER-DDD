@@ -59,12 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arabica\Calificar.cs">
+    <Compile Include="ArabicaForms\Calificar2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Arabica\Calificar.Designer.cs">
-      <DependentUpon>Calificar.cs</DependentUpon>
+    <Compile Include="ArabicaForms\Calificar2.Designer.cs">
+      <DependentUpon>Calificar2.cs</DependentUpon>
     </Compile>
+    <Compile Include="IformMuestra.cs" />
     <Compile Include="IformPerson.cs" />
     <Compile Include="IformSesion.cs" />
     <Compile Include="Menu.cs">
@@ -79,11 +80,11 @@
     <Compile Include="MuestraForm.Designer.cs">
       <DependentUpon>MuestraForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Muestra\EditMuestra.cs">
+    <Compile Include="MuestraForms\EditMuestra2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Muestra\EditMuestra.Designer.cs">
-      <DependentUpon>EditMuestra.cs</DependentUpon>
+    <Compile Include="MuestraForms\EditMuestra2.Designer.cs">
+      <DependentUpon>EditMuestra2.cs</DependentUpon>
     </Compile>
     <Compile Include="NewPerson.cs">
       <SubType>Form</SubType>
@@ -111,8 +112,8 @@
     <Compile Include="SesionCatadoForm.Designer.cs">
       <DependentUpon>SesionCatadoForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Arabica\Calificar.resx">
-      <DependentUpon>Calificar.cs</DependentUpon>
+    <EmbeddedResource Include="ArabicaForms\Calificar2.resx">
+      <DependentUpon>Calificar2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -120,8 +121,8 @@
     <EmbeddedResource Include="MuestraForm.resx">
       <DependentUpon>MuestraForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Muestra\EditMuestra.resx">
-      <DependentUpon>EditMuestra.cs</DependentUpon>
+    <EmbeddedResource Include="MuestraForms\EditMuestra2.resx">
+      <DependentUpon>EditMuestra2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewPerson.resx">
       <DependentUpon>NewPerson.cs</DependentUpon>

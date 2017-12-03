@@ -25,16 +25,6 @@ namespace Application.Implements
         public string CreateForSesion(Muestra entity, string identificador, int valor)
         {
            
-            //if (identificador != "Letras") //Generar digitos
-            //{
-            //    entity.Identificador = valor.ToString();
-            //}
-            //else //Generar letras
-            //{
-            //    entity.Identificador = Convert.ToChar(64 + valor).ToString();
-            //}
-
-            //guardar muestra ? try/catch???
             string respuesta;
             CataneiContext context = new CataneiContext();
             try
@@ -58,6 +48,27 @@ namespace Application.Implements
 
             return "Ok";
         }
+
+        public bool Update(Muestra entity)
+        {
+            Muestra current = _muestraRepository.Find(entity.Id);
+            try
+            {
+                current.Nombre = entity.Nombre;
+                current.Descripcion = entity.Descripcion;
+                current.Humedad = entity.Humedad;
+                current.Region = entity.Region;
+                current.AnioCosecha = entity.AnioCosecha;
+                _muestraRepository.Edit(current);
+                _unitOfWork.Commit();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+
         public bool UpdateMuestras(string idSesion, string identificador)
         {
             //obtener las muestras de la sesion

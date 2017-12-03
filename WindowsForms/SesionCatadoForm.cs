@@ -48,13 +48,15 @@ namespace WindowsForms
 
         private void btnMuestra_Click(object sender, EventArgs e)
         {
-            MuestraForm frm = new MuestraForm();
+            idSesion = dataGridView1.CurrentRow.Cells["Id"].FormattedValue.ToString();
+            MuestraForm frm = new MuestraForm(idSesion);
             frm.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (idSesion!="")
+            idSesion = dataGridView1.CurrentRow.Cells["Id"].FormattedValue.ToString();
+            if (idSesion!=null)
             {
                 service.Delete(idSesion, "201"); //Por decir algo
                 LoadDataGridView();
@@ -63,7 +65,11 @@ namespace WindowsForms
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            idSesion = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                idSesion = row.Cells["Id"].Value.ToString();
+            }
         }
     }
 }
