@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificar2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboGeneral = new System.Windows.Forms.ComboBox();
+            this.comboSaborBoca = new System.Windows.Forms.ComboBox();
+            this.comboFragancia = new System.Windows.Forms.ComboBox();
+            this.comboBalance = new System.Windows.Forms.ComboBox();
+            this.comboSabor = new System.Windows.Forms.ComboBox();
+            this.comboCuerpo = new System.Windows.Forms.ComboBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -45,33 +51,18 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lbCalificacion = new System.Windows.Forms.Label();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbTueste5 = new System.Windows.Forms.RadioButton();
+            this.rbTueste4 = new System.Windows.Forms.RadioButton();
+            this.rbTueste3 = new System.Windows.Forms.RadioButton();
+            this.rbTueste2 = new System.Windows.Forms.RadioButton();
+            this.rbTueste1 = new System.Windows.Forms.RadioButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -87,12 +78,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboCuerpo = new System.Windows.Forms.ComboBox();
-            this.comboSabor = new System.Windows.Forms.ComboBox();
-            this.comboBalance = new System.Windows.Forms.ComboBox();
-            this.comboFragancia = new System.Windows.Forms.ComboBox();
-            this.comboSaborBoca = new System.Windows.Forms.ComboBox();
-            this.comboGeneral = new System.Windows.Forms.ComboBox();
+            this.checkUnifor1 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor2 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor3 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor4 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor5 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor5 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor4 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor3 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor2 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor1 = new System.Windows.Forms.CheckBox();
+            this.checkTaza5 = new System.Windows.Forms.CheckBox();
+            this.checkTaza4 = new System.Windows.Forms.CheckBox();
+            this.checkTaza3 = new System.Windows.Forms.CheckBox();
+            this.checkTaza2 = new System.Windows.Forms.CheckBox();
+            this.checkTaza1 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -124,6 +124,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.checkTaza5);
+            this.panel1.Controls.Add(this.checkTaza4);
+            this.panel1.Controls.Add(this.checkTaza3);
+            this.panel1.Controls.Add(this.checkTaza2);
+            this.panel1.Controls.Add(this.checkTaza1);
+            this.panel1.Controls.Add(this.checkDulzor5);
+            this.panel1.Controls.Add(this.checkDulzor4);
+            this.panel1.Controls.Add(this.checkDulzor3);
+            this.panel1.Controls.Add(this.checkDulzor2);
+            this.panel1.Controls.Add(this.checkDulzor1);
+            this.panel1.Controls.Add(this.checkUnifor5);
+            this.panel1.Controls.Add(this.checkUnifor4);
+            this.panel1.Controls.Add(this.checkUnifor3);
+            this.panel1.Controls.Add(this.checkUnifor2);
+            this.panel1.Controls.Add(this.checkUnifor1);
             this.panel1.Controls.Add(this.comboGeneral);
             this.panel1.Controls.Add(this.comboSaborBoca);
             this.panel1.Controls.Add(this.comboFragancia);
@@ -145,33 +160,18 @@
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.lbCalificacion);
-            this.panel1.Controls.Add(this.radioButton16);
-            this.panel1.Controls.Add(this.radioButton17);
-            this.panel1.Controls.Add(this.radioButton18);
-            this.panel1.Controls.Add(this.radioButton19);
-            this.panel1.Controls.Add(this.radioButton20);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.radioButton6);
-            this.panel1.Controls.Add(this.radioButton7);
-            this.panel1.Controls.Add(this.radioButton8);
-            this.panel1.Controls.Add(this.radioButton9);
-            this.panel1.Controls.Add(this.radioButton10);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.radioButton11);
-            this.panel1.Controls.Add(this.radioButton12);
-            this.panel1.Controls.Add(this.radioButton13);
-            this.panel1.Controls.Add(this.radioButton14);
-            this.panel1.Controls.Add(this.radioButton15);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.radioButton5);
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rbTueste5);
+            this.panel1.Controls.Add(this.rbTueste4);
+            this.panel1.Controls.Add(this.rbTueste3);
+            this.panel1.Controls.Add(this.rbTueste2);
+            this.panel1.Controls.Add(this.rbTueste1);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -191,6 +191,162 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 398);
             this.panel1.TabIndex = 10;
+            // 
+            // comboGeneral
+            // 
+            this.comboGeneral.FormattingEnabled = true;
+            this.comboGeneral.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboGeneral.Location = new System.Drawing.Point(431, 260);
+            this.comboGeneral.Name = "comboGeneral";
+            this.comboGeneral.Size = new System.Drawing.Size(62, 21);
+            this.comboGeneral.TabIndex = 104;
+            // 
+            // comboSaborBoca
+            // 
+            this.comboSaborBoca.FormattingEnabled = true;
+            this.comboSaborBoca.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboSaborBoca.Location = new System.Drawing.Point(430, 200);
+            this.comboSaborBoca.Name = "comboSaborBoca";
+            this.comboSaborBoca.Size = new System.Drawing.Size(62, 21);
+            this.comboSaborBoca.TabIndex = 103;
+            // 
+            // comboFragancia
+            // 
+            this.comboFragancia.FormattingEnabled = true;
+            this.comboFragancia.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboFragancia.Location = new System.Drawing.Point(430, 136);
+            this.comboFragancia.Name = "comboFragancia";
+            this.comboFragancia.Size = new System.Drawing.Size(62, 21);
+            this.comboFragancia.TabIndex = 102;
+            // 
+            // comboBalance
+            // 
+            this.comboBalance.FormattingEnabled = true;
+            this.comboBalance.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboBalance.Location = new System.Drawing.Point(103, 260);
+            this.comboBalance.Name = "comboBalance";
+            this.comboBalance.Size = new System.Drawing.Size(62, 21);
+            this.comboBalance.TabIndex = 101;
+            // 
+            // comboSabor
+            // 
+            this.comboSabor.FormattingEnabled = true;
+            this.comboSabor.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboSabor.Location = new System.Drawing.Point(103, 204);
+            this.comboSabor.Name = "comboSabor";
+            this.comboSabor.Size = new System.Drawing.Size(62, 21);
+            this.comboSabor.TabIndex = 100;
+            // 
+            // comboCuerpo
+            // 
+            this.comboCuerpo.FormattingEnabled = true;
+            this.comboCuerpo.Items.AddRange(new object[] {
+            "10",
+            "9,75",
+            "9,5",
+            "9,25",
+            "9",
+            "8,75",
+            "8,5",
+            "8,25",
+            "8",
+            "7,75",
+            "7,5",
+            "7,25",
+            "7",
+            "6,75",
+            "6,5",
+            "6,25",
+            "6"});
+            this.comboCuerpo.Location = new System.Drawing.Point(103, 151);
+            this.comboCuerpo.Name = "comboCuerpo";
+            this.comboCuerpo.Size = new System.Drawing.Size(62, 21);
+            this.comboCuerpo.TabIndex = 99;
             // 
             // pictureBox16
             // 
@@ -324,120 +480,20 @@
             this.lbCalificacion.AutoSize = true;
             this.lbCalificacion.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCalificacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbCalificacion.Location = new System.Drawing.Point(76, 6);
+            this.lbCalificacion.Location = new System.Drawing.Point(86, 6);
             this.lbCalificacion.Name = "lbCalificacion";
             this.lbCalificacion.Size = new System.Drawing.Size(64, 27);
             this.lbCalificacion.TabIndex = 84;
             this.lbCalificacion.Text = "Calif.";
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(195, 450);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(14, 13);
-            this.radioButton16.TabIndex = 83;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.UseVisualStyleBackColor = true;
-            // 
-            // radioButton17
-            // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Location = new System.Drawing.Point(155, 450);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(14, 13);
-            this.radioButton17.TabIndex = 82;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.UseVisualStyleBackColor = true;
-            // 
-            // radioButton18
-            // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(114, 450);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(14, 13);
-            this.radioButton18.TabIndex = 81;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.UseVisualStyleBackColor = true;
-            // 
-            // radioButton19
-            // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Location = new System.Drawing.Point(75, 450);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(14, 13);
-            this.radioButton19.TabIndex = 80;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.UseVisualStyleBackColor = true;
-            // 
-            // radioButton20
-            // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Location = new System.Drawing.Point(36, 450);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(14, 13);
-            this.radioButton20.TabIndex = 79;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(16, 401);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 13);
+            this.label12.Size = new System.Drawing.Size(63, 13);
             this.label12.TabIndex = 73;
-            this.label12.Text = "Uniformidad:";
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(194, 370);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(14, 13);
-            this.radioButton6.TabIndex = 72;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(158, 370);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(14, 13);
-            this.radioButton7.TabIndex = 71;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(117, 370);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(14, 13);
-            this.radioButton8.TabIndex = 70;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(78, 370);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(14, 13);
-            this.radioButton9.TabIndex = 69;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(39, 370);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(14, 13);
-            this.radioButton10.TabIndex = 68;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.label12.Text = "Taza limpia:";
             // 
             // pictureBox10
             // 
@@ -471,7 +527,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(351, 425);
+            this.label13.Location = new System.Drawing.Point(328, 418);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 60;
@@ -479,119 +535,69 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(413, 423);
+            this.numericUpDown1.Location = new System.Drawing.Point(390, 416);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(74, 20);
             this.numericUpDown1.TabIndex = 48;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(478, 370);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(14, 13);
-            this.radioButton11.TabIndex = 47;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(439, 370);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(14, 13);
-            this.radioButton12.TabIndex = 46;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(398, 370);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(14, 13);
-            this.radioButton13.TabIndex = 45;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(359, 370);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(14, 13);
-            this.radioButton14.TabIndex = 44;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(320, 370);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(14, 13);
-            this.radioButton15.TabIndex = 43;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(300, 321);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 13);
+            this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 37;
-            this.label11.Text = "Uniformidad:";
+            this.label11.Text = "Dulzor:";
             // 
-            // radioButton5
+            // rbTueste5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(183, 114);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(14, 13);
-            this.radioButton5.TabIndex = 25;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbTueste5.AutoSize = true;
+            this.rbTueste5.Location = new System.Drawing.Point(183, 114);
+            this.rbTueste5.Name = "rbTueste5";
+            this.rbTueste5.Size = new System.Drawing.Size(14, 13);
+            this.rbTueste5.TabIndex = 25;
+            this.rbTueste5.TabStop = true;
+            this.rbTueste5.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbTueste4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(143, 114);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(14, 13);
-            this.radioButton4.TabIndex = 24;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbTueste4.AutoSize = true;
+            this.rbTueste4.Location = new System.Drawing.Point(143, 114);
+            this.rbTueste4.Name = "rbTueste4";
+            this.rbTueste4.Size = new System.Drawing.Size(14, 13);
+            this.rbTueste4.TabIndex = 24;
+            this.rbTueste4.TabStop = true;
+            this.rbTueste4.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbTueste3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(102, 114);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 23;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbTueste3.AutoSize = true;
+            this.rbTueste3.Location = new System.Drawing.Point(102, 114);
+            this.rbTueste3.Name = "rbTueste3";
+            this.rbTueste3.Size = new System.Drawing.Size(14, 13);
+            this.rbTueste3.TabIndex = 23;
+            this.rbTueste3.TabStop = true;
+            this.rbTueste3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbTueste2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(63, 114);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 22;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbTueste2.AutoSize = true;
+            this.rbTueste2.Location = new System.Drawing.Point(63, 114);
+            this.rbTueste2.Name = "rbTueste2";
+            this.rbTueste2.Size = new System.Drawing.Size(14, 13);
+            this.rbTueste2.TabIndex = 22;
+            this.rbTueste2.TabStop = true;
+            this.rbTueste2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbTueste1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 114);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 21;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbTueste1.AutoSize = true;
+            this.rbTueste1.Location = new System.Drawing.Point(24, 114);
+            this.rbTueste1.Name = "rbTueste1";
+            this.rbTueste1.Size = new System.Drawing.Size(14, 13);
+            this.rbTueste1.TabIndex = 21;
+            this.rbTueste1.TabStop = true;
+            this.rbTueste1.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
@@ -643,17 +649,21 @@
             this.comboAcidez.FormattingEnabled = true;
             this.comboAcidez.Items.AddRange(new object[] {
             "10",
-            "9.75",
-            "9.25",
+            "9,75",
+            "9,5",
+            "9,25",
             "9",
-            "8.75",
-            "8.25",
+            "8,75",
+            "8,5",
+            "8,25",
             "8",
-            "7.75",
-            "7.25",
+            "7,75",
+            "7,5",
+            "7,25",
             "7",
-            "6.75",
-            "6.25",
+            "6,75",
+            "6,5",
+            "6,25",
             "6"});
             this.comboAcidez.Location = new System.Drawing.Point(430, 70);
             this.comboAcidez.Name = "comboAcidez";
@@ -741,137 +751,140 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Calificación:";
             // 
-            // comboCuerpo
+            // checkUnifor1
             // 
-            this.comboCuerpo.FormattingEnabled = true;
-            this.comboCuerpo.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboCuerpo.Location = new System.Drawing.Point(103, 151);
-            this.comboCuerpo.Name = "comboCuerpo";
-            this.comboCuerpo.Size = new System.Drawing.Size(62, 21);
-            this.comboCuerpo.TabIndex = 99;
+            this.checkUnifor1.AutoSize = true;
+            this.checkUnifor1.Location = new System.Drawing.Point(39, 371);
+            this.checkUnifor1.Name = "checkUnifor1";
+            this.checkUnifor1.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor1.TabIndex = 106;
+            this.checkUnifor1.UseVisualStyleBackColor = true;
             // 
-            // comboSabor
+            // checkUnifor2
             // 
-            this.comboSabor.FormattingEnabled = true;
-            this.comboSabor.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboSabor.Location = new System.Drawing.Point(103, 204);
-            this.comboSabor.Name = "comboSabor";
-            this.comboSabor.Size = new System.Drawing.Size(62, 21);
-            this.comboSabor.TabIndex = 100;
+            this.checkUnifor2.AutoSize = true;
+            this.checkUnifor2.Location = new System.Drawing.Point(79, 371);
+            this.checkUnifor2.Name = "checkUnifor2";
+            this.checkUnifor2.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor2.TabIndex = 107;
+            this.checkUnifor2.UseVisualStyleBackColor = true;
             // 
-            // comboBalance
+            // checkUnifor3
             // 
-            this.comboBalance.FormattingEnabled = true;
-            this.comboBalance.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboBalance.Location = new System.Drawing.Point(103, 260);
-            this.comboBalance.Name = "comboBalance";
-            this.comboBalance.Size = new System.Drawing.Size(62, 21);
-            this.comboBalance.TabIndex = 101;
+            this.checkUnifor3.AutoSize = true;
+            this.checkUnifor3.Location = new System.Drawing.Point(118, 371);
+            this.checkUnifor3.Name = "checkUnifor3";
+            this.checkUnifor3.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor3.TabIndex = 108;
+            this.checkUnifor3.UseVisualStyleBackColor = true;
             // 
-            // comboFragancia
+            // checkUnifor4
             // 
-            this.comboFragancia.FormattingEnabled = true;
-            this.comboFragancia.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboFragancia.Location = new System.Drawing.Point(430, 136);
-            this.comboFragancia.Name = "comboFragancia";
-            this.comboFragancia.Size = new System.Drawing.Size(62, 21);
-            this.comboFragancia.TabIndex = 102;
+            this.checkUnifor4.AutoSize = true;
+            this.checkUnifor4.Location = new System.Drawing.Point(155, 371);
+            this.checkUnifor4.Name = "checkUnifor4";
+            this.checkUnifor4.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor4.TabIndex = 109;
+            this.checkUnifor4.UseVisualStyleBackColor = true;
             // 
-            // comboSaborBoca
+            // checkUnifor5
             // 
-            this.comboSaborBoca.FormattingEnabled = true;
-            this.comboSaborBoca.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboSaborBoca.Location = new System.Drawing.Point(430, 200);
-            this.comboSaborBoca.Name = "comboSaborBoca";
-            this.comboSaborBoca.Size = new System.Drawing.Size(62, 21);
-            this.comboSaborBoca.TabIndex = 103;
+            this.checkUnifor5.AutoSize = true;
+            this.checkUnifor5.Location = new System.Drawing.Point(195, 371);
+            this.checkUnifor5.Name = "checkUnifor5";
+            this.checkUnifor5.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor5.TabIndex = 110;
+            this.checkUnifor5.UseVisualStyleBackColor = true;
             // 
-            // comboGeneral
+            // checkDulzor5
             // 
-            this.comboGeneral.FormattingEnabled = true;
-            this.comboGeneral.Items.AddRange(new object[] {
-            "10",
-            "9.75",
-            "9.25",
-            "9",
-            "8.75",
-            "8.25",
-            "8",
-            "7.75",
-            "7.25",
-            "7",
-            "6.75",
-            "6.25",
-            "6"});
-            this.comboGeneral.Location = new System.Drawing.Point(431, 260);
-            this.comboGeneral.Name = "comboGeneral";
-            this.comboGeneral.Size = new System.Drawing.Size(62, 21);
-            this.comboGeneral.TabIndex = 104;
+            this.checkDulzor5.AutoSize = true;
+            this.checkDulzor5.Location = new System.Drawing.Point(478, 369);
+            this.checkDulzor5.Name = "checkDulzor5";
+            this.checkDulzor5.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor5.TabIndex = 115;
+            this.checkDulzor5.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor4
+            // 
+            this.checkDulzor4.AutoSize = true;
+            this.checkDulzor4.Location = new System.Drawing.Point(438, 370);
+            this.checkDulzor4.Name = "checkDulzor4";
+            this.checkDulzor4.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor4.TabIndex = 114;
+            this.checkDulzor4.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor3
+            // 
+            this.checkDulzor3.AutoSize = true;
+            this.checkDulzor3.Location = new System.Drawing.Point(401, 370);
+            this.checkDulzor3.Name = "checkDulzor3";
+            this.checkDulzor3.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor3.TabIndex = 113;
+            this.checkDulzor3.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor2
+            // 
+            this.checkDulzor2.AutoSize = true;
+            this.checkDulzor2.Location = new System.Drawing.Point(362, 370);
+            this.checkDulzor2.Name = "checkDulzor2";
+            this.checkDulzor2.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor2.TabIndex = 112;
+            this.checkDulzor2.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor1
+            // 
+            this.checkDulzor1.AutoSize = true;
+            this.checkDulzor1.Location = new System.Drawing.Point(322, 370);
+            this.checkDulzor1.Name = "checkDulzor1";
+            this.checkDulzor1.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor1.TabIndex = 111;
+            this.checkDulzor1.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza5
+            // 
+            this.checkTaza5.AutoSize = true;
+            this.checkTaza5.Location = new System.Drawing.Point(196, 449);
+            this.checkTaza5.Name = "checkTaza5";
+            this.checkTaza5.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza5.TabIndex = 120;
+            this.checkTaza5.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza4
+            // 
+            this.checkTaza4.AutoSize = true;
+            this.checkTaza4.Location = new System.Drawing.Point(156, 450);
+            this.checkTaza4.Name = "checkTaza4";
+            this.checkTaza4.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza4.TabIndex = 119;
+            this.checkTaza4.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza3
+            // 
+            this.checkTaza3.AutoSize = true;
+            this.checkTaza3.Location = new System.Drawing.Point(119, 450);
+            this.checkTaza3.Name = "checkTaza3";
+            this.checkTaza3.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza3.TabIndex = 118;
+            this.checkTaza3.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza2
+            // 
+            this.checkTaza2.AutoSize = true;
+            this.checkTaza2.Location = new System.Drawing.Point(80, 450);
+            this.checkTaza2.Name = "checkTaza2";
+            this.checkTaza2.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza2.TabIndex = 117;
+            this.checkTaza2.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza1
+            // 
+            this.checkTaza1.AutoSize = true;
+            this.checkTaza1.Location = new System.Drawing.Point(40, 450);
+            this.checkTaza1.Name = "checkTaza1";
+            this.checkTaza1.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza1.TabIndex = 116;
+            this.checkTaza1.UseVisualStyleBackColor = true;
             // 
             // Calificar2
             // 
@@ -927,33 +940,18 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         internal System.Windows.Forms.Label lbCalificacion;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton20;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbTueste5;
+        private System.Windows.Forms.RadioButton rbTueste4;
+        private System.Windows.Forms.RadioButton rbTueste3;
+        private System.Windows.Forms.RadioButton rbTueste2;
+        private System.Windows.Forms.RadioButton rbTueste1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -975,5 +973,20 @@
         private System.Windows.Forms.ComboBox comboBalance;
         private System.Windows.Forms.ComboBox comboSabor;
         private System.Windows.Forms.ComboBox comboCuerpo;
+        private System.Windows.Forms.CheckBox checkTaza5;
+        private System.Windows.Forms.CheckBox checkTaza4;
+        private System.Windows.Forms.CheckBox checkTaza3;
+        private System.Windows.Forms.CheckBox checkTaza2;
+        private System.Windows.Forms.CheckBox checkTaza1;
+        private System.Windows.Forms.CheckBox checkDulzor5;
+        private System.Windows.Forms.CheckBox checkDulzor4;
+        private System.Windows.Forms.CheckBox checkDulzor3;
+        private System.Windows.Forms.CheckBox checkDulzor2;
+        private System.Windows.Forms.CheckBox checkDulzor1;
+        private System.Windows.Forms.CheckBox checkUnifor5;
+        private System.Windows.Forms.CheckBox checkUnifor4;
+        private System.Windows.Forms.CheckBox checkUnifor3;
+        private System.Windows.Forms.CheckBox checkUnifor2;
+        private System.Windows.Forms.CheckBox checkUnifor1;
     }
 }

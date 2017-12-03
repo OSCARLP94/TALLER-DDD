@@ -43,13 +43,12 @@ namespace Application.Implements
                     muestraClone.Identificador = i;
 
                     ArabicaFactoryPrototype arabicaPrototype = new ArabicaFactoryPrototype();
-                    arabicaPrototype.Muestra = muestraClone;
                     //-----
-                    Arabica arabica = arabicaPrototype.Clone() as Arabica;
-                    arabica.Id = Convert.ToString(rnd.Next(1000000, 9999999));
+                    Arabica arabicaClone = arabicaPrototype.CloneArabica();
+                    arabicaClone.Id = Convert.ToString(rnd.Next(100000, 999999));
+                    arabicaClone.Muestra = muestraClone;
 
                     entity.Muestras.Add(muestraClone);
-
                 }
                 _sesionCatadoRepository.Add(entity);
                 _unitOfWork.Commit();

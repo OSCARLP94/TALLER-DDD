@@ -61,6 +61,7 @@
             this.btnCalificar.TabIndex = 2;
             this.btnCalificar.Text = "Calificar";
             this.btnCalificar.UseVisualStyleBackColor = true;
+            this.btnCalificar.Click += new System.EventHandler(this.btnCalificar_Click);
             // 
             // MuestraForm
             // 

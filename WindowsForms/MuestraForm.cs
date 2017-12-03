@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsForms.MuestraForms;
+using WindowsForms.ArabicaForms;
 
 namespace WindowsForms
 {
@@ -51,6 +52,13 @@ namespace WindowsForms
         {
             idMuestra= dataGridView.CurrentRow.Cells["Id"].FormattedValue.ToString();
             EditMuestra2 frm = new EditMuestra2(idMuestra);
+            frm.Show(this);
+        }
+
+        private void btnCalificar_Click(object sender, EventArgs e)
+        {
+            idMuestra = dataGridView.CurrentRow.Cells["Id"].FormattedValue.ToString();
+            Calificar2 frm = new Calificar2(idMuestra);
             frm.Show(this);
         }
 

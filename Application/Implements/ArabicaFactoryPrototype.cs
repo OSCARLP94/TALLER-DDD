@@ -7,42 +7,44 @@ using System.Threading.Tasks;
 
 namespace Application.Implements
 {
-    public class ArabicaFactoryPrototype : Arabica, ICloneable
+    public class ArabicaFactoryPrototype : Arabica
     {        
         public ArabicaFactoryPrototype()
         {
-            this.Calificacion = 82.5;
-            this.Tueste = 3;
-            this.TotalAcidez = 7.5;
-            this.TotalCuerpo = 7.5;
-            this.TotalFragancia = 7.5;
-            this.TotalSabor = 7.5;
-            this.TotalSaborBoca = 7.5;
-            this.TotalBalance = 7.5;
-            this.TotalGeneral = 7.5;
-            this.TotalDulzor = 10;
-            this.Dulzor1 = true;
-            this.Dulzor2 = true;
-            this.Dulzor3 = true;
-            this.Dulzor4 = true;
-            this.Dulzor5 = true;
-            this.TotalUniformidad = 10;
-            this.Uniformidad1 = true;
-            this.Uniformidad2 = true;
-            this.Uniformidad3 = true;
-            this.Uniformidad4 = true;
-            this.Uniformidad5 = true;
-            this.TotalTaza = 10;
-            this.Taza1 = true;
-            this.Taza2 = true;
-            this.Taza3 = true;
-            this.Taza4 = true;
-            this.Taza5 = true;
-            this.Defectos = 0;
+            
         }
-        public object Clone()
+        public Arabica CloneArabica()
         {
-            return this.MemberwiseClone() as Arabica;
+            Arabica arabica = new Arabica();
+            arabica.Calificacion = 82.5;
+            arabica.Tueste = 3;
+            arabica.TotalAcidez = 7.5;
+            arabica.TotalCuerpo = 7.5;
+            arabica.TotalFragancia = 7.5;
+            arabica.TotalSabor = 7.5;
+            arabica.TotalSaborBoca = 7.5;
+            arabica.TotalBalance = 7.5;
+            arabica.TotalGeneral = 7.5;
+            arabica.TotalDulzor = 10;
+            arabica.Dulzor1 = true;
+            arabica.Dulzor2 = true;
+            arabica.Dulzor3 = true;
+            arabica.Dulzor4 = true;
+            arabica.Dulzor5 = true;
+            arabica.TotalUniformidad = 10;
+            arabica.Uniformidad1 = true;
+            arabica.Uniformidad2 = true;
+            arabica.Uniformidad3 = true;
+            arabica.Uniformidad4 = true;
+            arabica.Uniformidad5 = true;
+            arabica.TotalTaza = 10;
+            arabica.Taza1 = true;
+            arabica.Taza2 = true;
+            arabica.Taza3 = true;
+            arabica.Taza4 = true;
+            arabica.Taza5 = true;
+            arabica.Defectos = 0;
+            return arabica;
         }
     }
 }

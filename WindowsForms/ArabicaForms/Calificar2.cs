@@ -32,6 +32,145 @@ namespace WindowsForms.ArabicaForms
         private void Calificar2_Load(object sender, EventArgs e)
         {
             arabica = service.GetAll().SingleOrDefault(m=>m.IdMuestra== idMuestra);
+            lbCalificacion.Text = arabica.Calificacion.ToString();
+            var index = comboAcidez.FindStringExact(arabica.TotalAcidez.ToString());
+            if (index != -1)
+            {
+                comboAcidez.SelectedIndex = index;
+            }
+            index = comboCuerpo.FindStringExact(arabica.TotalCuerpo.ToString());
+            if (index != -1)
+            {
+                comboCuerpo.SelectedIndex = index;
+            }
+            index = comboFragancia.FindStringExact(arabica.TotalFragancia.ToString());
+            if (index != -1)
+            {
+                comboFragancia.SelectedIndex = index;
+            }
+            index = comboSabor.FindStringExact(arabica.TotalSabor.ToString());
+            if (index != -1)
+            {
+                comboSabor.SelectedIndex = index;
+            }
+            index = comboSaborBoca.FindStringExact(arabica.TotalSaborBoca.ToString());
+            if (index != -1)
+            {
+                comboSaborBoca.SelectedIndex = index;
+            }
+            index = comboBalance.FindStringExact(arabica.TotalBalance.ToString());
+            if (index != -1)
+            {
+                comboBalance.SelectedIndex = index;
+            }
+            index = comboGeneral.FindStringExact(arabica.TotalGeneral.ToString());
+            if (index != -1)
+            {
+                comboGeneral.SelectedIndex = index;
+            }
+
+            switch (arabica.Tueste)
+            {
+                case 1:
+                    rbTueste1.Checked = true;
+                    break;
+                case 2:
+                    rbTueste2.Checked = true;
+                    break;
+                case 3:
+                    rbTueste3.Checked = true;
+                    break;
+                case 4:
+                    rbTueste4.Checked = true;
+                    break;
+                case 5:
+                    rbTueste5.Checked = true;
+                    break;
+            }
+
+            RadioButtonsFalse();
+
+            if (arabica.Dulzor1)
+            {
+                checkDulzor1.Checked = true;
+            }
+            if (arabica.Dulzor2)
+            {
+                checkDulzor2.Checked = true;
+            }
+            if (arabica.Dulzor3)
+            {
+                checkDulzor3.Checked = true;
+            }
+            if (arabica.Dulzor4)
+            {
+                checkDulzor4.Checked = true;
+            }
+            if (arabica.Dulzor5)
+            {
+                checkDulzor5.Checked = true;
+            }
+
+            if (arabica.Uniformidad1)
+            {
+                checkUnifor5.Checked = true;
+            }
+            if (arabica.Uniformidad2)
+            {
+                checkUnifor2.Checked = true;
+            }
+            if (arabica.Uniformidad3)
+            {
+                checkUnifor3.Checked = true;
+            }
+            if (arabica.Uniformidad4)
+            {
+                checkUnifor4.Checked = true;
+            }
+            if (arabica.Uniformidad5)
+            {
+                checkUnifor5.Checked = true;
+            }
+
+            if (arabica.Taza1)
+            {
+                checkTaza1.Checked = true;
+            }
+            if (arabica.Taza2)
+            {
+                checkTaza2.Checked = true;
+            }
+            if (arabica.Taza3)
+            {
+                checkTaza3.Checked = true;
+            }
+            if (arabica.Taza4)
+            {
+                checkTaza4.Checked = true;
+            }
+            if (arabica.Taza5)
+            {
+                checkTaza5.Checked = true;
+            }
+        }
+
+        private void RadioButtonsFalse()
+        {
+            checkTaza1.Checked = false;
+            checkTaza2.Checked = false;
+            checkTaza3.Checked = false;
+            checkTaza4.Checked = false;
+            checkTaza5.Checked = false;
+            checkUnifor5.Checked = false;
+            checkUnifor2.Checked = false;
+            checkUnifor3.Checked = false;
+            checkUnifor4.Checked = false;
+            checkUnifor5.Checked = false;
+            checkDulzor1.Checked = false;
+            checkDulzor2.Checked = false;
+            checkDulzor3.Checked = false;
+            checkDulzor4.Checked = false;
+            checkDulzor5.Checked = false;
         }
     }
 }

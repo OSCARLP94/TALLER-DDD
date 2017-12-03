@@ -27,7 +27,7 @@ namespace Application.Implements
             arabicaPrototype.IdMuestra = idMuestra;
             //-----
 
-            Arabica entity = arabicaPrototype.Clone() as Arabica;  
+            Arabica entity = arabicaPrototype.CloneArabica();  
             entity.Id = Convert.ToString(rnd.Next(1000000, 9999999));
             try
             {
