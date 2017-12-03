@@ -13,14 +13,14 @@ namespace Infraestructure.Data.Test
     [TestFixture]
     public class MuestraRepositoryTestWithDB
     {
-        SampleArchContextTest databaseContext;
+        CataneiContextTest databaseContext;
         MuestraRepository objRepo;
 
         [SetUp]
         public void Initialize()
         {
             Console.WriteLine("Inicializando");
-            databaseContext = new SampleArchContextTest();
+            databaseContext = new CataneiContextTest();
             objRepo = new MuestraRepository(databaseContext);
         }
 
@@ -45,7 +45,7 @@ namespace Infraestructure.Data.Test
         {
             Console.WriteLine("Ejecutando NEW");
             //Arrange
-            Muestra c = new Muestra() { Id = "3", Descripcion = "test2", Identificador = "1", Especie = "Arabica", AnioCosecha = "2010", IdSesionCatado = "1", IdPerson = "301", Estado = "Incompleto" };
+            Muestra c = new Muestra() { Id = "3", Descripcion = "test2",  Especie = "Arabica", AnioCosecha = "2010", IdSesionCatado = "1", IdPerson = "301", Estado = "Incompleto" };
 
             //Act
             objRepo.Add(c);

@@ -24,8 +24,8 @@ namespace Application.Test
             _mockUnitWork = new Mock<IUnitOfWork>();
             _service = new MuestraService(_mockUnitWork.Object, _mockRepository.Object);
             listMuestra = new List<Muestra>() {
-               new Muestra() { Id = "1", Descripcion="test", Identificador="1", Especie="Arabica", AnioCosecha="2010", IdSesionCatado="1", IdPerson="301", Estado="Incompleto"},
-               new Muestra() { Id = "2", Identificador="A", Especie="Arabica",Humedad=20, Region="313", IdPerson="301", IdSesionCatado="2", Estado="Incompleto" }
+               new Muestra() { Id = "1", Descripcion="test", Especie="Arabica", AnioCosecha="2010", IdSesionCatado="1", IdPerson="301", Estado="Incompleto"},
+               new Muestra() { Id = "2", Especie="Arabica",Humedad=20, Region="313", IdPerson="301", IdSesionCatado="2", Estado="Incompleto" }
             };
         }
 
@@ -48,7 +48,7 @@ namespace Application.Test
         {
             //Arrange
             string Id = "3";
-            Muestra emp = new Muestra() { Identificador = "A", Especie = "Arabica", Humedad = 20, Region = "313", IdSesionCatado = "2", IdPerson = "301", Estado = "Incompleto" };
+            Muestra emp = new Muestra() { Especie = "Arabica", Humedad = 20, Region = "313", IdSesionCatado = "2", IdPerson = "301", Estado = "Incompleto" };
             _mockRepository.Setup(m => m.Add(emp)).Returns((Muestra e) =>
             {
                 e.Id = Id;

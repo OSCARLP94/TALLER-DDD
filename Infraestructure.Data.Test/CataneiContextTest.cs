@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace Infraestructure.Data.Test
 {
-    class SampleArchContextTest : SampleArchContext
+    class CataneiContextTest : CataneiContext
     {
-        public SampleArchContextTest(): base()
+        public CataneiContextTest(): base()
         {
 
         }
-        public SampleArchContextTest(DbConnection connection)
+        public CataneiContextTest(DbConnection connection)
           : base(connection)
         {
             Log = Console.WriteLine;
@@ -24,12 +24,12 @@ namespace Infraestructure.Data.Test
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Suppress code first model migration check          
-            Database.SetInitializer<SampleArchContextTest>(new AlwaysCreateInitializer());
+            Database.SetInitializer<CataneiContextTest>(new AlwaysCreateInitializer());
 
 
             base.OnModelCreating(modelBuilder);
         }
-        public void Seed(SampleArchContext context)
+        public void Seed(CataneiContext context)
         {
             var listPais = new List<Pais>() {
                new Pais() { Id = 1, Nombre = "Colombia" },
@@ -111,14 +111,14 @@ namespace Infraestructure.Data.Test
 
             var listSesion = new List<SesionCatado>()
             {
-                new SesionCatado() { Id = "1", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), Descripcion="", IdCiudad="311", Identificador="Digitos", Protocolo="Arabica", Muestras= 1 , IdPerson="201", Estado="Incompleto"},
-               new SesionCatado() { Id = "2", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), Descripcion="", IdCiudad="313", Identificador="Letras", Protocolo="Arabica", Muestras= 1, IdPerson="201", Estado="Incompleto" }
+                new SesionCatado() { Id = "1", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), Descripcion="", IdCiudad="311", Identificador="Digitos", Protocolo="Arabica", CantidadMuestras= 1 , IdPerson="201", Estado="Incompleto"},
+               new SesionCatado() { Id = "2", FechaInicio = new DateTime(2008, 6, 1, 7, 47, 0), Descripcion="", IdCiudad="313", Identificador="Letras", Protocolo="Arabica", CantidadMuestras= 1, IdPerson="201", Estado="Incompleto" }
             };
 
             var listMuestra = new List<Muestra>()
             {
-               new Muestra() { Id = "1", Descripcion="test", Identificador="1", Especie="Arabica", AnioCosecha="2010", IdSesionCatado="1", IdPerson="301", Estado="Incompleto"},
-               new Muestra() { Id = "2", Identificador="A", Especie="Arabica",Humedad=20, Region="313", IdPerson="301", IdSesionCatado="2", Estado="Incompleto" }
+               new Muestra() { Id = "1", Descripcion="test", Especie="Arabica", AnioCosecha="2010", IdSesionCatado="1", IdPerson="301", Estado="Incompleto"},
+               new Muestra() { Id = "2", Especie="Arabica",Humedad=20, Region="313", IdPerson="301", IdSesionCatado="2", Estado="Incompleto" }
             };
 
             var listArabica = new List<Arabica>()
@@ -137,27 +137,27 @@ namespace Infraestructure.Data.Test
             context.SaveChanges();
         }
 
-        public class DropCreateIfChangeInitializer : DropCreateDatabaseIfModelChanges<SampleArchContextTest>
+        public class DropCreateIfChangeInitializer : DropCreateDatabaseIfModelChanges<CataneiContextTest>
         {
-            protected override void Seed(SampleArchContextTest context)
+            protected override void Seed(CataneiContextTest context)
             {
                 context.Seed(context);
                 base.Seed(context);
             }
         }
 
-        public class CreateInitializer : CreateDatabaseIfNotExists<SampleArchContextTest>
+        public class CreateInitializer : CreateDatabaseIfNotExists<CataneiContextTest>
         {
-            protected override void Seed(SampleArchContextTest context)
+            protected override void Seed(CataneiContextTest context)
             {
                 context.Seed(context);
                 base.Seed(context);
             }
         }
 
-        public class AlwaysCreateInitializer : DropCreateDatabaseAlways<SampleArchContextTest>
+        public class AlwaysCreateInitializer : DropCreateDatabaseAlways<CataneiContextTest>
         {
-            protected override void Seed(SampleArchContextTest context)
+            protected override void Seed(CataneiContextTest context)
             {
                 context.Seed(context);
                 base.Seed(context);
