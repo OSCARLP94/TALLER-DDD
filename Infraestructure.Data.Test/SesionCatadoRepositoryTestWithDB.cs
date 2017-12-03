@@ -13,14 +13,14 @@ namespace Infraestructure.Data.Test
     [TestFixture]
     public class SesionCatadoRepositoryTestWithDB
     {
-        SampleArchContextTest databaseContext;
+        CataneiContextTest databaseContext;
         SesionCatadoRepository objRepo;
 
         [SetUp]
         public void Initialize()
         {
             Console.WriteLine("Inicializando");
-            databaseContext = new SampleArchContextTest();
+            databaseContext = new CataneiContextTest();
             objRepo = new SesionCatadoRepository(databaseContext);
         }
 

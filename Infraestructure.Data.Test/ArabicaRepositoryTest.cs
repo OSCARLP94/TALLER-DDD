@@ -13,7 +13,7 @@ namespace Infraestructure.Data.Test
     [TestFixture]
     public class ArabicaRepositoryTestWithDB
     {
-        SampleArchContextTest databaseContext;
+        CataneiContextTest databaseContext;
         ArabicaRepository objRepo;
 
         [SetUp]
@@ -21,7 +21,7 @@ namespace Infraestructure.Data.Test
         {
            
             Console.WriteLine("Inicializando");
-            databaseContext = new SampleArchContextTest();
+            databaseContext = new CataneiContextTest();
             objRepo = new ArabicaRepository(databaseContext);
         }
 

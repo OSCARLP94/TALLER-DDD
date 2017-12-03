@@ -62,7 +62,7 @@
     <Compile Include="PersonRepositoryTest.cs" />
     <Compile Include="PersonRepositoryTestWithDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleArchContextTest.cs" />
+    <Compile Include="CataneiContextTest.cs" />
     <Compile Include="SesionCatadoRepositoryTestWithDB.cs" />
   </ItemGroup>
   <ItemGroup>
