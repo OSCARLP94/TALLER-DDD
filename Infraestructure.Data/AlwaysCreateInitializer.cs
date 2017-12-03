@@ -105,7 +105,7 @@ namespace Infraestructure.Data
             var listArabica = new List<Arabica>()
             {
                 new Arabica() { Id = "1", IdMuestra="1",Calificacion=62.5, TotalAcidez=7.5, TotalCuerpo=7.5, TotalBalance=7.5, TotalDulzor=10, Dulzor1= true, Dulzor2=true, Dulzor3= true, Dulzor4= true, Dulzor5= true , TotalFragancia=7.5, TotalGeneral= 7.5, TotalSabor= 7.5, TotalSaborBoca= 7.5, TotalTaza= 0, Taza1=false, Taza2=false, Taza3= false, Taza4=false, Taza5=false, Tueste= 3, TotalUniformidad=0, Uniformidad1=false, Uniformidad2=false, Uniformidad3= false, Uniformidad4=false, Uniformidad5=false },
-               new Arabica() { Id = "2",IdMuestra="2", Calificacion=62.5, TotalAcidez=7.5, TotalCuerpo=7.5, TotalBalance=7.5, TotalDulzor=10, Dulzor1= true, Dulzor2=true, Dulzor3= true, Dulzor4= true, Dulzor5= true , TotalFragancia=7.5, TotalGeneral= 7.5, TotalSabor= 7.5, TotalSaborBoca= 7.5, TotalTaza= 0, Taza1=false, Taza2=false, Taza3= false, Taza4=false, Taza5=false, Tueste= 3, TotalUniformidad=0, Uniformidad1=false, Uniformidad2=false, Uniformidad3= false, Uniformidad4=false, Uniformidad5=false}
+               new Arabica() { Id = "2",IdMuestra="2", Calificacion=60.5, TotalAcidez=7.5, TotalCuerpo=7.5, TotalBalance=7.5, TotalDulzor=0, Dulzor1= false, Dulzor2=false, Dulzor3= false, Dulzor4= false, Dulzor5= false , TotalFragancia=7.5, TotalGeneral= 7.5, TotalSabor= 7.5, TotalSaborBoca= 7.5, TotalTaza= 8, Taza1=true, Taza2=true, Taza3= true, Taza4=true, Taza5=false, Tueste= 3, TotalUniformidad=0, Uniformidad1=false, Uniformidad2=false, Uniformidad3= false, Uniformidad4=false, Uniformidad5=false}
             };
 
             context.Pais.AddRange(listPais);

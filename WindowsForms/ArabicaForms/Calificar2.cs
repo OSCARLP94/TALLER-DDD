@@ -89,7 +89,7 @@ namespace WindowsForms.ArabicaForms
             }
 
             RadioButtonsFalse();
-
+           
             if (arabica.Dulzor1)
             {
                 checkDulzor1.Checked = true;
@@ -152,6 +152,11 @@ namespace WindowsForms.ArabicaForms
             {
                 checkTaza5.Checked = true;
             }
+
+            numericUpDown1.Value = arabica.Defectos;
+            lbDulzor.Text = Convert.ToString(arabica.TotalDulzor);
+            lbTaza.Text = Convert.ToString(arabica.TotalTaza);
+            lbUniformidad.Text = Convert.ToString(arabica.TotalUniformidad);
         }
 
         private void RadioButtonsFalse()
@@ -171,6 +176,96 @@ namespace WindowsForms.ArabicaForms
             checkDulzor3.Checked = false;
             checkDulzor4.Checked = false;
             checkDulzor5.Checked = false;
+        }
+
+        private void checkUnifor1_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkUnifor2_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkUnifor3_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkUnifor4_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkUnifor5_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+
+        private void checkDulzor1_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkDulzor2_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkDulzor3_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkDulzor4_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkDulzor5_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+
+        private void checkTaza1_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkTaza2_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkTaza3_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkTaza4_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void checkTaza5_CheckedChanged(object sender, EventArgs e)
+        {
+            Calificacion();
+        }
+        private void Calificacion()
+        {
+            int i = 0;
+            i = (checkDulzor1.Checked) ? i+1 : i;
+            i = (checkDulzor2.Checked) ? i+1 : i;
+            i = (checkDulzor3.Checked) ? i+1 : i;
+            i = (checkDulzor4.Checked) ? i+1 : i;
+            i = (checkDulzor5.Checked) ? i+1 : i;
+            lbDulzor.Text = Convert.ToString((i * 2));
+
+            i = 0;
+            i = (checkUnifor1.Checked) ? i + 1 : i;
+            i = (checkUnifor2.Checked) ? i + 1 : i;
+            i = (checkUnifor3.Checked) ? i + 1 : i;
+            i = (checkUnifor4.Checked) ? i + 1 : i;
+            i = (checkUnifor5.Checked) ? i + 1 : i;
+            lbUniformidad.Text = Convert.ToString((i * 2));
+
+            i = 0;
+            i = (checkTaza1.Checked) ? i + 1 : i;
+            i = (checkTaza2.Checked) ? i + 1 : i;
+            i = (checkTaza3.Checked) ? i + 1 : i;
+            i = (checkTaza4.Checked) ? i + 1 : i;
+            i = (checkTaza5.Checked) ? i + 1 : i;
+            lbTaza.Text = Convert.ToString((i * 2));
+
         }
     }
 }

@@ -93,6 +93,9 @@
             this.checkTaza3 = new System.Windows.Forms.CheckBox();
             this.checkTaza2 = new System.Windows.Forms.CheckBox();
             this.checkTaza1 = new System.Windows.Forms.CheckBox();
+            this.lbUniformidad = new System.Windows.Forms.Label();
+            this.lbDulzor = new System.Windows.Forms.Label();
+            this.lbTaza = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -124,6 +127,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.lbTaza);
+            this.panel1.Controls.Add(this.lbDulzor);
+            this.panel1.Controls.Add(this.lbUniformidad);
             this.panel1.Controls.Add(this.checkTaza5);
             this.panel1.Controls.Add(this.checkTaza4);
             this.panel1.Controls.Add(this.checkTaza3);
@@ -759,6 +765,7 @@
             this.checkUnifor1.Size = new System.Drawing.Size(15, 14);
             this.checkUnifor1.TabIndex = 106;
             this.checkUnifor1.UseVisualStyleBackColor = true;
+            this.checkUnifor1.CheckedChanged += new System.EventHandler(this.checkUnifor1_CheckedChanged);
             // 
             // checkUnifor2
             // 
@@ -840,6 +847,7 @@
             this.checkDulzor1.Size = new System.Drawing.Size(15, 14);
             this.checkDulzor1.TabIndex = 111;
             this.checkDulzor1.UseVisualStyleBackColor = true;
+            this.checkDulzor1.CheckedChanged += new System.EventHandler(this.checkDulzor1_CheckedChanged);
             // 
             // checkTaza5
             // 
@@ -885,6 +893,34 @@
             this.checkTaza1.Size = new System.Drawing.Size(15, 14);
             this.checkTaza1.TabIndex = 116;
             this.checkTaza1.UseVisualStyleBackColor = true;
+            this.checkTaza1.CheckedChanged += new System.EventHandler(this.checkTaza1_CheckedChanged);
+            // 
+            // lbUniformidad
+            // 
+            this.lbUniformidad.AutoSize = true;
+            this.lbUniformidad.Location = new System.Drawing.Point(92, 321);
+            this.lbUniformidad.Name = "lbUniformidad";
+            this.lbUniformidad.Size = new System.Drawing.Size(16, 13);
+            this.lbUniformidad.TabIndex = 121;
+            this.lbUniformidad.Text = "---";
+            // 
+            // lbDulzor
+            // 
+            this.lbDulzor.AutoSize = true;
+            this.lbDulzor.Location = new System.Drawing.Point(348, 322);
+            this.lbDulzor.Name = "lbDulzor";
+            this.lbDulzor.Size = new System.Drawing.Size(16, 13);
+            this.lbDulzor.TabIndex = 122;
+            this.lbDulzor.Text = "---";
+            // 
+            // lbTaza
+            // 
+            this.lbTaza.AutoSize = true;
+            this.lbTaza.Location = new System.Drawing.Point(89, 402);
+            this.lbTaza.Name = "lbTaza";
+            this.lbTaza.Size = new System.Drawing.Size(16, 13);
+            this.lbTaza.TabIndex = 123;
+            this.lbTaza.Text = "---";
             // 
             // Calificar2
             // 
@@ -988,5 +1024,8 @@
         private System.Windows.Forms.CheckBox checkUnifor3;
         private System.Windows.Forms.CheckBox checkUnifor2;
         private System.Windows.Forms.CheckBox checkUnifor1;
+        private System.Windows.Forms.Label lbTaza;
+        private System.Windows.Forms.Label lbDulzor;
+        private System.Windows.Forms.Label lbUniformidad;
     }
 }
