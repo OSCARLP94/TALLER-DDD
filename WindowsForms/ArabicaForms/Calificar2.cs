@@ -264,8 +264,13 @@ namespace WindowsForms.ArabicaForms
             i = (checkTaza3.Checked) ? i + 1 : i;
             i = (checkTaza4.Checked) ? i + 1 : i;
             i = (checkTaza5.Checked) ? i + 1 : i;
-            lbTaza.Text = Convert.ToString((i * 2));
+            lbTaza.Text = Convert.ToString((i * 2));           
 
+        }
+
+        private void comboAcidez_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //lbCalificacion.Text = Convert.ToString(Convert.ToDecimal(comboAcidez.SelectedValue));
         }
     }
 }

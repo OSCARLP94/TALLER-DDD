@@ -30,6 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificar2));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbTaza = new System.Windows.Forms.Label();
+            this.lbDulzor = new System.Windows.Forms.Label();
+            this.lbUniformidad = new System.Windows.Forms.Label();
+            this.checkTaza5 = new System.Windows.Forms.CheckBox();
+            this.checkTaza4 = new System.Windows.Forms.CheckBox();
+            this.checkTaza3 = new System.Windows.Forms.CheckBox();
+            this.checkTaza2 = new System.Windows.Forms.CheckBox();
+            this.checkTaza1 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor5 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor4 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor3 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor2 = new System.Windows.Forms.CheckBox();
+            this.checkDulzor1 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor5 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor4 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor3 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor2 = new System.Windows.Forms.CheckBox();
+            this.checkUnifor1 = new System.Windows.Forms.CheckBox();
             this.comboGeneral = new System.Windows.Forms.ComboBox();
             this.comboSaborBoca = new System.Windows.Forms.ComboBox();
             this.comboFragancia = new System.Windows.Forms.ComboBox();
@@ -78,24 +96,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkUnifor1 = new System.Windows.Forms.CheckBox();
-            this.checkUnifor2 = new System.Windows.Forms.CheckBox();
-            this.checkUnifor3 = new System.Windows.Forms.CheckBox();
-            this.checkUnifor4 = new System.Windows.Forms.CheckBox();
-            this.checkUnifor5 = new System.Windows.Forms.CheckBox();
-            this.checkDulzor5 = new System.Windows.Forms.CheckBox();
-            this.checkDulzor4 = new System.Windows.Forms.CheckBox();
-            this.checkDulzor3 = new System.Windows.Forms.CheckBox();
-            this.checkDulzor2 = new System.Windows.Forms.CheckBox();
-            this.checkDulzor1 = new System.Windows.Forms.CheckBox();
-            this.checkTaza5 = new System.Windows.Forms.CheckBox();
-            this.checkTaza4 = new System.Windows.Forms.CheckBox();
-            this.checkTaza3 = new System.Windows.Forms.CheckBox();
-            this.checkTaza2 = new System.Windows.Forms.CheckBox();
-            this.checkTaza1 = new System.Windows.Forms.CheckBox();
-            this.lbUniformidad = new System.Windows.Forms.Label();
-            this.lbDulzor = new System.Windows.Forms.Label();
-            this.lbTaza = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -197,6 +197,171 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 398);
             this.panel1.TabIndex = 10;
+            // 
+            // lbTaza
+            // 
+            this.lbTaza.AutoSize = true;
+            this.lbTaza.Location = new System.Drawing.Point(89, 402);
+            this.lbTaza.Name = "lbTaza";
+            this.lbTaza.Size = new System.Drawing.Size(16, 13);
+            this.lbTaza.TabIndex = 123;
+            this.lbTaza.Text = "---";
+            // 
+            // lbDulzor
+            // 
+            this.lbDulzor.AutoSize = true;
+            this.lbDulzor.Location = new System.Drawing.Point(348, 322);
+            this.lbDulzor.Name = "lbDulzor";
+            this.lbDulzor.Size = new System.Drawing.Size(16, 13);
+            this.lbDulzor.TabIndex = 122;
+            this.lbDulzor.Text = "---";
+            // 
+            // lbUniformidad
+            // 
+            this.lbUniformidad.AutoSize = true;
+            this.lbUniformidad.Location = new System.Drawing.Point(92, 321);
+            this.lbUniformidad.Name = "lbUniformidad";
+            this.lbUniformidad.Size = new System.Drawing.Size(16, 13);
+            this.lbUniformidad.TabIndex = 121;
+            this.lbUniformidad.Text = "---";
+            // 
+            // checkTaza5
+            // 
+            this.checkTaza5.AutoSize = true;
+            this.checkTaza5.Location = new System.Drawing.Point(196, 449);
+            this.checkTaza5.Name = "checkTaza5";
+            this.checkTaza5.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza5.TabIndex = 120;
+            this.checkTaza5.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza4
+            // 
+            this.checkTaza4.AutoSize = true;
+            this.checkTaza4.Location = new System.Drawing.Point(156, 450);
+            this.checkTaza4.Name = "checkTaza4";
+            this.checkTaza4.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza4.TabIndex = 119;
+            this.checkTaza4.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza3
+            // 
+            this.checkTaza3.AutoSize = true;
+            this.checkTaza3.Location = new System.Drawing.Point(119, 450);
+            this.checkTaza3.Name = "checkTaza3";
+            this.checkTaza3.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza3.TabIndex = 118;
+            this.checkTaza3.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza2
+            // 
+            this.checkTaza2.AutoSize = true;
+            this.checkTaza2.Location = new System.Drawing.Point(80, 450);
+            this.checkTaza2.Name = "checkTaza2";
+            this.checkTaza2.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza2.TabIndex = 117;
+            this.checkTaza2.UseVisualStyleBackColor = true;
+            // 
+            // checkTaza1
+            // 
+            this.checkTaza1.AutoSize = true;
+            this.checkTaza1.Location = new System.Drawing.Point(40, 450);
+            this.checkTaza1.Name = "checkTaza1";
+            this.checkTaza1.Size = new System.Drawing.Size(15, 14);
+            this.checkTaza1.TabIndex = 116;
+            this.checkTaza1.UseVisualStyleBackColor = true;
+            this.checkTaza1.CheckedChanged += new System.EventHandler(this.checkTaza1_CheckedChanged);
+            // 
+            // checkDulzor5
+            // 
+            this.checkDulzor5.AutoSize = true;
+            this.checkDulzor5.Location = new System.Drawing.Point(478, 369);
+            this.checkDulzor5.Name = "checkDulzor5";
+            this.checkDulzor5.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor5.TabIndex = 115;
+            this.checkDulzor5.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor4
+            // 
+            this.checkDulzor4.AutoSize = true;
+            this.checkDulzor4.Location = new System.Drawing.Point(438, 370);
+            this.checkDulzor4.Name = "checkDulzor4";
+            this.checkDulzor4.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor4.TabIndex = 114;
+            this.checkDulzor4.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor3
+            // 
+            this.checkDulzor3.AutoSize = true;
+            this.checkDulzor3.Location = new System.Drawing.Point(401, 370);
+            this.checkDulzor3.Name = "checkDulzor3";
+            this.checkDulzor3.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor3.TabIndex = 113;
+            this.checkDulzor3.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor2
+            // 
+            this.checkDulzor2.AutoSize = true;
+            this.checkDulzor2.Location = new System.Drawing.Point(362, 370);
+            this.checkDulzor2.Name = "checkDulzor2";
+            this.checkDulzor2.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor2.TabIndex = 112;
+            this.checkDulzor2.UseVisualStyleBackColor = true;
+            // 
+            // checkDulzor1
+            // 
+            this.checkDulzor1.AutoSize = true;
+            this.checkDulzor1.Location = new System.Drawing.Point(322, 370);
+            this.checkDulzor1.Name = "checkDulzor1";
+            this.checkDulzor1.Size = new System.Drawing.Size(15, 14);
+            this.checkDulzor1.TabIndex = 111;
+            this.checkDulzor1.UseVisualStyleBackColor = true;
+            this.checkDulzor1.CheckedChanged += new System.EventHandler(this.checkDulzor1_CheckedChanged);
+            // 
+            // checkUnifor5
+            // 
+            this.checkUnifor5.AutoSize = true;
+            this.checkUnifor5.Location = new System.Drawing.Point(195, 371);
+            this.checkUnifor5.Name = "checkUnifor5";
+            this.checkUnifor5.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor5.TabIndex = 110;
+            this.checkUnifor5.UseVisualStyleBackColor = true;
+            // 
+            // checkUnifor4
+            // 
+            this.checkUnifor4.AutoSize = true;
+            this.checkUnifor4.Location = new System.Drawing.Point(155, 371);
+            this.checkUnifor4.Name = "checkUnifor4";
+            this.checkUnifor4.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor4.TabIndex = 109;
+            this.checkUnifor4.UseVisualStyleBackColor = true;
+            // 
+            // checkUnifor3
+            // 
+            this.checkUnifor3.AutoSize = true;
+            this.checkUnifor3.Location = new System.Drawing.Point(118, 371);
+            this.checkUnifor3.Name = "checkUnifor3";
+            this.checkUnifor3.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor3.TabIndex = 108;
+            this.checkUnifor3.UseVisualStyleBackColor = true;
+            // 
+            // checkUnifor2
+            // 
+            this.checkUnifor2.AutoSize = true;
+            this.checkUnifor2.Location = new System.Drawing.Point(79, 371);
+            this.checkUnifor2.Name = "checkUnifor2";
+            this.checkUnifor2.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor2.TabIndex = 107;
+            this.checkUnifor2.UseVisualStyleBackColor = true;
+            // 
+            // checkUnifor1
+            // 
+            this.checkUnifor1.AutoSize = true;
+            this.checkUnifor1.Location = new System.Drawing.Point(39, 371);
+            this.checkUnifor1.Name = "checkUnifor1";
+            this.checkUnifor1.Size = new System.Drawing.Size(15, 14);
+            this.checkUnifor1.TabIndex = 106;
+            this.checkUnifor1.UseVisualStyleBackColor = true;
+            this.checkUnifor1.CheckedChanged += new System.EventHandler(this.checkUnifor1_CheckedChanged);
             // 
             // comboGeneral
             // 
@@ -675,6 +840,7 @@
             this.comboAcidez.Name = "comboAcidez";
             this.comboAcidez.Size = new System.Drawing.Size(62, 21);
             this.comboAcidez.TabIndex = 10;
+            this.comboAcidez.SelectedIndexChanged += new System.EventHandler(this.comboAcidez_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -756,171 +922,6 @@
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Calificación:";
-            // 
-            // checkUnifor1
-            // 
-            this.checkUnifor1.AutoSize = true;
-            this.checkUnifor1.Location = new System.Drawing.Point(39, 371);
-            this.checkUnifor1.Name = "checkUnifor1";
-            this.checkUnifor1.Size = new System.Drawing.Size(15, 14);
-            this.checkUnifor1.TabIndex = 106;
-            this.checkUnifor1.UseVisualStyleBackColor = true;
-            this.checkUnifor1.CheckedChanged += new System.EventHandler(this.checkUnifor1_CheckedChanged);
-            // 
-            // checkUnifor2
-            // 
-            this.checkUnifor2.AutoSize = true;
-            this.checkUnifor2.Location = new System.Drawing.Point(79, 371);
-            this.checkUnifor2.Name = "checkUnifor2";
-            this.checkUnifor2.Size = new System.Drawing.Size(15, 14);
-            this.checkUnifor2.TabIndex = 107;
-            this.checkUnifor2.UseVisualStyleBackColor = true;
-            // 
-            // checkUnifor3
-            // 
-            this.checkUnifor3.AutoSize = true;
-            this.checkUnifor3.Location = new System.Drawing.Point(118, 371);
-            this.checkUnifor3.Name = "checkUnifor3";
-            this.checkUnifor3.Size = new System.Drawing.Size(15, 14);
-            this.checkUnifor3.TabIndex = 108;
-            this.checkUnifor3.UseVisualStyleBackColor = true;
-            // 
-            // checkUnifor4
-            // 
-            this.checkUnifor4.AutoSize = true;
-            this.checkUnifor4.Location = new System.Drawing.Point(155, 371);
-            this.checkUnifor4.Name = "checkUnifor4";
-            this.checkUnifor4.Size = new System.Drawing.Size(15, 14);
-            this.checkUnifor4.TabIndex = 109;
-            this.checkUnifor4.UseVisualStyleBackColor = true;
-            // 
-            // checkUnifor5
-            // 
-            this.checkUnifor5.AutoSize = true;
-            this.checkUnifor5.Location = new System.Drawing.Point(195, 371);
-            this.checkUnifor5.Name = "checkUnifor5";
-            this.checkUnifor5.Size = new System.Drawing.Size(15, 14);
-            this.checkUnifor5.TabIndex = 110;
-            this.checkUnifor5.UseVisualStyleBackColor = true;
-            // 
-            // checkDulzor5
-            // 
-            this.checkDulzor5.AutoSize = true;
-            this.checkDulzor5.Location = new System.Drawing.Point(478, 369);
-            this.checkDulzor5.Name = "checkDulzor5";
-            this.checkDulzor5.Size = new System.Drawing.Size(15, 14);
-            this.checkDulzor5.TabIndex = 115;
-            this.checkDulzor5.UseVisualStyleBackColor = true;
-            // 
-            // checkDulzor4
-            // 
-            this.checkDulzor4.AutoSize = true;
-            this.checkDulzor4.Location = new System.Drawing.Point(438, 370);
-            this.checkDulzor4.Name = "checkDulzor4";
-            this.checkDulzor4.Size = new System.Drawing.Size(15, 14);
-            this.checkDulzor4.TabIndex = 114;
-            this.checkDulzor4.UseVisualStyleBackColor = true;
-            // 
-            // checkDulzor3
-            // 
-            this.checkDulzor3.AutoSize = true;
-            this.checkDulzor3.Location = new System.Drawing.Point(401, 370);
-            this.checkDulzor3.Name = "checkDulzor3";
-            this.checkDulzor3.Size = new System.Drawing.Size(15, 14);
-            this.checkDulzor3.TabIndex = 113;
-            this.checkDulzor3.UseVisualStyleBackColor = true;
-            // 
-            // checkDulzor2
-            // 
-            this.checkDulzor2.AutoSize = true;
-            this.checkDulzor2.Location = new System.Drawing.Point(362, 370);
-            this.checkDulzor2.Name = "checkDulzor2";
-            this.checkDulzor2.Size = new System.Drawing.Size(15, 14);
-            this.checkDulzor2.TabIndex = 112;
-            this.checkDulzor2.UseVisualStyleBackColor = true;
-            // 
-            // checkDulzor1
-            // 
-            this.checkDulzor1.AutoSize = true;
-            this.checkDulzor1.Location = new System.Drawing.Point(322, 370);
-            this.checkDulzor1.Name = "checkDulzor1";
-            this.checkDulzor1.Size = new System.Drawing.Size(15, 14);
-            this.checkDulzor1.TabIndex = 111;
-            this.checkDulzor1.UseVisualStyleBackColor = true;
-            this.checkDulzor1.CheckedChanged += new System.EventHandler(this.checkDulzor1_CheckedChanged);
-            // 
-            // checkTaza5
-            // 
-            this.checkTaza5.AutoSize = true;
-            this.checkTaza5.Location = new System.Drawing.Point(196, 449);
-            this.checkTaza5.Name = "checkTaza5";
-            this.checkTaza5.Size = new System.Drawing.Size(15, 14);
-            this.checkTaza5.TabIndex = 120;
-            this.checkTaza5.UseVisualStyleBackColor = true;
-            // 
-            // checkTaza4
-            // 
-            this.checkTaza4.AutoSize = true;
-            this.checkTaza4.Location = new System.Drawing.Point(156, 450);
-            this.checkTaza4.Name = "checkTaza4";
-            this.checkTaza4.Size = new System.Drawing.Size(15, 14);
-            this.checkTaza4.TabIndex = 119;
-            this.checkTaza4.UseVisualStyleBackColor = true;
-            // 
-            // checkTaza3
-            // 
-            this.checkTaza3.AutoSize = true;
-            this.checkTaza3.Location = new System.Drawing.Point(119, 450);
-            this.checkTaza3.Name = "checkTaza3";
-            this.checkTaza3.Size = new System.Drawing.Size(15, 14);
-            this.checkTaza3.TabIndex = 118;
-            this.checkTaza3.UseVisualStyleBackColor = true;
-            // 
-            // checkTaza2
-            // 
-            this.checkTaza2.AutoSize = true;
-            this.checkTaza2.Location = new System.Drawing.Point(80, 450);
-            this.checkTaza2.Name = "checkTaza2";
-            this.checkTaza2.Size = new System.Drawing.Size(15, 14);
-            this.checkTaza2.TabIndex = 117;
-            this.checkTaza2.UseVisualStyleBackColor = true;
-            // 
-            // checkTaza1
-            // 
-            this.checkTaza1.AutoSize = true;
-            this.checkTaza1.Location = new System.Drawing.Point(40, 450);
-            this.checkTaza1.Name = "checkTaza1";
-            this.checkTaza1.Size = new System.Drawing.Size(15, 14);
-            this.checkTaza1.TabIndex = 116;
-            this.checkTaza1.UseVisualStyleBackColor = true;
-            this.checkTaza1.CheckedChanged += new System.EventHandler(this.checkTaza1_CheckedChanged);
-            // 
-            // lbUniformidad
-            // 
-            this.lbUniformidad.AutoSize = true;
-            this.lbUniformidad.Location = new System.Drawing.Point(92, 321);
-            this.lbUniformidad.Name = "lbUniformidad";
-            this.lbUniformidad.Size = new System.Drawing.Size(16, 13);
-            this.lbUniformidad.TabIndex = 121;
-            this.lbUniformidad.Text = "---";
-            // 
-            // lbDulzor
-            // 
-            this.lbDulzor.AutoSize = true;
-            this.lbDulzor.Location = new System.Drawing.Point(348, 322);
-            this.lbDulzor.Name = "lbDulzor";
-            this.lbDulzor.Size = new System.Drawing.Size(16, 13);
-            this.lbDulzor.TabIndex = 122;
-            this.lbDulzor.Text = "---";
-            // 
-            // lbTaza
-            // 
-            this.lbTaza.AutoSize = true;
-            this.lbTaza.Location = new System.Drawing.Point(89, 402);
-            this.lbTaza.Name = "lbTaza";
-            this.lbTaza.Size = new System.Drawing.Size(16, 13);
-            this.lbTaza.TabIndex = 123;
-            this.lbTaza.Text = "---";
             // 
             // Calificar2
             // 
